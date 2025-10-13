@@ -79,14 +79,49 @@
       </div>
 
       <!-- HERO Right Visual -->
-      <div class="relative">
-        <div class="aspect-[4/5] rounded-3xl bg-gray-100 shadow-xl"></div>
-        <div class="absolute -bottom-6 -left-6 bg-black text-white rounded-3xl p-5 shadow-2xl w-[280px]">
-          <div class="text-xs opacity-80">Field Note</div>
-          <div class="mt-1 font-semibold">완성된 회사가 아닙니다.</div>
-          <div class="mt-1 text-sm opacity-90">실패하고, 다시 시도하고, 버티면서 답을 찾습니다. 스펙보다 태도.</div>
-        </div>
+<div className="relative">
+  <div className="grid gap-4">
+    {/* 이츠스포츠 */}
+    <div className="rounded-3xl overflow-hidden shadow-md h-40 bg-gray-100 relative"
+      style={{ backgroundImage: "url('https://your-image-url-1.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
+      <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-4 text-white">
+        <h4 className="text-lg font-semibold">이츠스포츠</h4>
+        <a href="https://www.esports.co.kr" target="_blank" rel="noreferrer"
+           className="text-xs underline hover:opacity-80">홈페이지 바로가기</a>
       </div>
+    </div>
+
+    {/* 팜밀리 1987 */}
+    <div className="rounded-3xl overflow-hidden shadow-md h-40 bg-gray-100 relative"
+      style={{ backgroundImage: "url('https://your-image-url-2.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
+      <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-4 text-white">
+        <h4 className="text-lg font-semibold">팜밀리 1987</h4>
+        <a href="https://www.farmmily1987.co.kr" target="_blank" rel="noreferrer"
+           className="text-xs underline hover:opacity-80">홈페이지 바로가기</a>
+      </div>
+    </div>
+
+    {/* 푸디랩 */}
+    <div className="rounded-3xl overflow-hidden shadow-md h-40 bg-gray-100 relative"
+      style={{ backgroundImage: "url('https://your-image-url-3.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
+      <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-4 text-white">
+        <h4 className="text-lg font-semibold">푸디랩</h4>
+        <a href="https://www.foodylab.co.kr" target="_blank" rel="noreferrer"
+           className="text-xs underline hover:opacity-80">홈페이지 바로가기</a>
+      </div>
+    </div>
+  </div>
+
+  {/* Field Note */}
+  <div className="absolute -bottom-6 right-0 bg-black text-white rounded-3xl p-5 shadow-2xl w-[280px]">
+    <div className="text-xs opacity-80">Field Note</div>
+    <div className="mt-1 font-semibold">완성된 회사가 아닙니다.</div>
+    <div className="mt-1 text-sm opacity-90">
+      실패하고, 다시 시도하고, 버티면서 답을 찾습니다. 스펙보다 태도.
+    </div>
+  </div>
+</div>
+
     </div>
   </section>
 

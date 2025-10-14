@@ -37,7 +37,6 @@
   <section class="relative overflow-hidden">
     <div class="absolute inset-0 -z-10 bg-gradient-to-b from-gray-50 via-white to-white"></div>
 
-    <!-- 상단·하단 여백 튜닝 -->
     <div class="mx-auto max-w-[72rem] px-4 pt-8 md:pt-10 pb-10 md:pb-12 grid md:grid-cols-12 gap-7 items-start">
       <!-- LEFT -->
       <div class="md:col-span-8">
@@ -61,57 +60,59 @@
           <div><div class="font-semibold text-[15px]">140만+</div><div>누적 판매 — 여기서 멈출 수 없다</div></div>
         </div>
 
-        <!-- 설명 + 이모지 카드 4개 -->
-        <div class="mt-6 space-y-4 lg:min-h-[40rem] xl:min-h-[44rem]">
-          <!-- 제목+문단 박스 (여백 살짝 늘림) -->
-          <div class="rounded-2xl border bg-white shadow-soft p-6">
-            <h2 class="text-[18px] md:text-[20px] font-extrabold tracking-tight">큐레이터스는 아직 안정적이지 않습니다</h2>
-            <p class="mt-2.5 text-[15px] text-gray-600 leading-relaxed">
-              우리는 헬스&뷰티 영역에서 직접 브랜드를 만들고 키우는 팀입니다. 그러나 우리는 ‘완성’이 아닌 ‘진행형’에 있습니다.
-              안정 대신 실전, 화려한 스토리 대신 치열한 현장을 제공합니다. 오늘의 실행이 내일의 매출로 이어지도록 구조를 만들고,
-              실패는 빠르게 복기해 다시 시도합니다.
-            </p>
+        <!-- 소개 박스 -->
+        <div class="mt-6 rounded-2xl border bg-white shadow-soft p-6">
+          <h2 class="text-[18px] md:text-[20px] font-extrabold tracking-tight">큐레이터스는 아직 안정적이지 않습니다</h2>
+          <p class="mt-2.5 text-[15px] text-gray-600 leading-relaxed">
+            우리는 헬스&뷰티 영역에서 직접 브랜드를 만들고 키우는 팀입니다. 그러나 우리는 ‘완성’이 아닌 ‘진행형’에 있습니다.
+            안정 대신 실전, 화려한 스토리 대신 치열한 현장을 제공합니다. 오늘의 실행이 내일의 매출로 이어지도록 구조를 만들고,
+            실패는 빠르게 복기해 다시 시도합니다.
+          </p>
+        </div>
+
+        <!-- 핵심 카드 4개 (크기 통일) -->
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3.5 self-start">
+          <!-- 공통: 동일 높이/내부 정렬 -->
+          <div class="rounded-2xl border p-5 bg-white flex flex-col min-h-[160px]">
+            <div class="flex items-center gap-2">
+              <span class="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-gray-900/5 text-[16px]">🚀</span>
+              <div class="font-semibold text-[14px] md:text-[15px]">속도와 실행</div>
+            </div>
+            <p class="mt-2 text-[13px] text-gray-600">작은 아이디어도 곧바로 실행, 빠른 피드백 루프.</p>
+            <div class="mt-auto"></div>
           </div>
 
-          <!-- 카드 4개 (2열) — 이모지 적용, 마지막 카드 정렬 보정 -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-            <!-- 1 -->
-            <div class="rounded-2xl border p-4 bg-white">
-              <div class="flex items-center gap-2">
-                <span class="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-gray-900/5 text-[16px]">🚀</span>
-                <div class="font-semibold text-[14px] md:text-[15px]">속도와 실행</div>
-              </div>
-              <p class="mt-1.5 text-[13px] text-gray-600">작은 아이디어도 곧바로 실행, 빠른 피드백 루프.</p>
+          <div class="rounded-2xl border p-5 bg-white flex flex-col min-h-[160px]">
+            <div class="flex items-center gap-2">
+              <span class="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-gray-900/5 text-[16px]">🎯</span>
+              <div class="font-semibold text-[14px] md:text-[15px]">직접적 임팩트</div>
             </div>
-            <!-- 2 -->
-            <div class="rounded-2xl border p-4 bg-white">
-              <div class="flex items-center gap-2">
-                <span class="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-gray-900/5 text-[16px]">🎯</span>
-                <div class="font-semibold text-[14px] md:text-[15px]">직접적 임팩트</div>
-              </div>
-              <p class="mt-1.5 text-[13px] text-gray-600">당신의 결과물이 매출과 바로 연결.</p>
+            <p class="mt-2 text-[13px] text-gray-600">당신의 결과물이 매출과 바로 연결.</p>
+            <div class="mt-auto"></div>
+          </div>
+
+          <div class="rounded-2xl border p-5 bg-white flex flex-col min-h-[160px]">
+            <div class="flex items-center gap-2">
+              <span class="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-gray-900/5 text-[16px]">🧗</span>
+              <div class="font-semibold text-[14px] md:text-[15px]">처절한 실행</div>
             </div>
-            <!-- 3 -->
-            <div class="rounded-2xl border p-4 bg-white">
-              <div class="flex items-center gap-2">
-                <span class="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-gray-900/5 text-[16px]">🧗</span>
-                <div class="font-semibold text-[14px] md:text-[15px]">처절한 실행</div>
-              </div>
-              <p class="mt-1.5 text-[13px] text-gray-600">실패를 두려워하되 곧장 다시 시도.</p>
+            <p class="mt-2 text-[13px] text-gray-600">실패를 두려워하되 곧장 다시 시도.</p>
+            <div class="mt-auto"></div>
+          </div>
+
+          <!-- 마지막 카드: 동일 높이 + 정렬 -->
+          <div class="rounded-2xl border p-5 bg-white flex flex-col min-h-[160px]">
+            <div class="flex items-center gap-2">
+              <span class="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-gray-900/5 text-[16px]">🧑‍🤝‍🧑</span>
+              <div class="font-semibold text-[14px] md:text-[15px]">함께 버틴다</div>
             </div>
-            <!-- 4 (정렬 보정: Field Note 아래 라인과 시각적 정렬) -->
-            <div class="rounded-2xl border p-4 bg-white lg:mt-6 xl:mt-8">
-              <div class="flex items-center gap-2">
-                <span class="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-gray-900/5 text-[16px]">🧑‍🤝‍🧑</span>
-                <div class="font-semibold text-[14px] md:text-[15px]">함께 버틴다</div>
-              </div>
-              <p class="mt-1.5 text-[13px] text-gray-600">‘내 일이 아니다’ 대신 ‘어떻게든 해보자’.</p>
-            </div>
+            <p class="mt-2 text-[13px] text-gray-600">‘내 일이 아니다’ 대신 ‘어떻게든 해보자’.</p>
+            <div class="mt-auto"></div>
           </div>
         </div>
       </div>
 
-      <!-- RIGHT -->
+      <!-- RIGHT: 브랜드 카드들 (푸디랩 라인과 좌측 카드 상단선 맞춤: 기본 align-start) -->
       <div class="md:col-span-4 w-full">
         <!-- 이츠스포츠 -->
         <div class="block">
@@ -154,12 +155,14 @@
             <a class="text-gray-800 hover:opacity-80" href="https://foodylab.kr/" target="_blank" rel="noopener noreferrer">홈페이지 바로가기 →</a>
           </div>
         </div>
+      </div>
 
-        <!-- Field Note (시작점 약간 내려서 좌측 마지막 카드와 시각 정렬) -->
-        <div class="mt-6 bg-black text-white rounded-2xl p-5 shadow-soft">
+      <!-- FIELD NOTE: 두 컬럼 아래 전폭으로 확장 -->
+      <div class="md:col-span-12">
+        <div class="mt-6 bg-black text-white rounded-2xl p-6 md:p-7 shadow-soft">
           <div class="text-[11px] opacity-80">Field Note</div>
-          <div class="mt-1.5 font-semibold text-[17px]">완성된 회사가 아닙니다.</div>
-          <div class="mt-1 text-[13px] opacity-90 leading-relaxed">
+          <div class="mt-1.5 font-semibold text-[18px] md:text-[20px]">완성된 회사가 아닙니다.</div>
+          <div class="mt-1.5 text-[13px] md:text-[14px] opacity-90 leading-relaxed">
             실패하고, 다시 시도하고, 버티면서 답을 찾습니다. 스펙보다 태도.
           </div>
         </div>
@@ -170,7 +173,6 @@
   <!-- VALUES -->
   <section id="values" class="mx-auto max-w-[72rem] px-4 py-8">
     <div class="rounded-2xl border bg-gray-50 p-6 md:p-7">
-      <!-- 썸네일 제거 -->
       <div>
         <h3 class="text-[18px] md:text-[20px] font-extrabold">우리가 원하는 동료</h3>
         <p class="mt-1.5 text-[13px] text-gray-600">함께 끝까지 실행하는 동료를 찾습니다.</p>
@@ -270,40 +272,4 @@
       <div class="rounded-xl border p-4"><div class="text-[11px] text-gray-500">STEP 2</div><div class="mt-1 font-semibold text-[14px]">1차 인터뷰 (실무)</div></div>
       <div class="rounded-xl border p-4"><div class="text-[11px] text-gray-500">STEP 3</div><div class="mt-1 font-semibold text-[14px]">과제/작업물 리뷰</div></div>
       <div class="rounded-xl border p-4"><div class="text-[11px] text-gray-500">STEP 4</div><div class="mt-1 font-semibold text-[14px]">최종 인터뷰 (비전·문화)</div></div>
-      <div class="rounded-xl border p-4"><div class="text-[11px] text-gray-500">STEP 5</div><div class="mt-1 font-semibold text-[14px]">합격 및 온보딩</div></div>
-    </div>
-  </section>
-
-  <!-- APPLY -->
-  <section id="apply" class="mx-auto max-w-[72rem] px-4 py-10">
-    <div class="rounded-2xl bg-gray-900 text-white p-7 md:p-8">
-      <div class="text-[10px] uppercase tracking-widest opacity-80">Call to Action</div>
-      <h3 class="mt-2 text-[18px] md:text-[20px] font-extrabold leading-snug">안정은 없습니다. 하지만 진짜 실전이 있습니다.</h3>
-      <p class="mt-2 text-gray-300 leading-relaxed text-[13px] md:text-[14px]">
-        지금 이 무대에서 당신의 실행이 곧 우리의 생존과 성장입니다. 끝까지 해내며 함께 살아남을 동료, 바로 당신입니다.
-      </p>
-      <div class="mt-4 flex flex-col sm:flex-row gap-3">
-        <a
-          href="https://curators.career.greetinghr.com/ko/curators?utm_source=careers_site&utm_medium=landing&utm_campaign=curators_survival"
-          target="_blank" rel="noreferrer"
-          class="inline-flex items-center justify-center rounded-2xl h-10 px-5 bg-white text-gray-900 hover:bg-white/90 text-[13px]">
-          그리팅에서 지원하기
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="border-t">
-    <div class="mx-auto max-w-[72rem] px-4 py-7 text-[12px] md:text-[13px] text-gray-500 flex flex-col md:flex-row items-center gap-2 md:justify-between">
-      <div>© <span id="y"></span> Curators Inc. All rights reserved.</div>
-      <div class="flex items-center gap-4">
-        <span>서울 서초구 반포대로21길 49</span>
-        <span>채용 문의: recruit@curators.co.kr</span>
-      </div>
-    </div>
-  </footer>
-
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-</body>
-</html>
+      <div class="rounded-xl border p-4"><div class="text-[11px]()

@@ -69,41 +69,43 @@
           <div><div class="font-semibold">140만+</div><div>누적 판매 — 여기서 멈출 수 없다</div></div>
         </div>
 
-        <!-- ② 제목+문단 블록 (지표 바로 아래) — 좌측 컬럼 가득 -->
-        <div class="mt-6 rounded-2xl border bg-white shadow-soft p-5 md:p-6">
-          <h2 class="text-xl md:text-2xl font-extrabold tracking-tight">큐레이터스는 아직 안정적이지 않습니다</h2>
-          <p class="mt-3 text-sm text-gray-600 leading-relaxed">
-            우리는 헬스&뷰티 영역에서 직접 브랜드를 만들고 키우는 팀입니다.
-            그러나 우리는 ‘완성’이 아닌 ‘진행형’에 있습니다. 안정 대신 실전,
-            화려한 스토리 대신 치열한 현장을 제공합니다.
-          </p>
-        </div>
+        <!-- ②+③ 묶음: 높이 보정 -->
+        <div class="mt-6 space-y-4 lg:min-h-[38rem]">
+          <!-- ② 제목+문단 (타이포/패딩 확대) -->
+          <div class="rounded-2xl border bg-white shadow-soft p-6">
+            <h2 class="text-2xl md:text-[28px] font-extrabold tracking-tight">큐레이터스는 아직 안정적이지 않습니다</h2>
+            <p class="mt-3 text-base md:text-lg text-gray-600 leading-relaxed">
+              우리는 헬스&뷰티 영역에서 직접 브랜드를 만들고 키우는 팀입니다. 그러나 우리는 ‘완성’이 아닌 ‘진행형’에 있습니다.
+              안정 대신 실전, 화려한 스토리 대신 치열한 현장을 제공합니다. 오늘의 실행이 내일의 매출로 이어지도록 구조를 만들고,
+              실패는 빠르게 복기해 다시 시도합니다.
+            </p>
+          </div>
 
-        <!-- ③ 카드 4개 블록 — 좌측 컬럼 가득, 2열로 꽉 채움 -->
-        <div class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div class="rounded-2xl border p-4 bg-white">
-            <div class="font-semibold">속도와 실행</div>
-            <p class="mt-1 text-sm text-gray-600">작은 아이디어도 곧바로 실행, 빠른 피드백 루프.</p>
-          </div>
-          <div class="rounded-2xl border p-4 bg-white">
-            <div class="font-semibold">직접적 임팩트</div>
-            <p class="mt-1 text-sm text-gray-600">당신의 결과물이 매출과 바로 연결.</p>
-          </div>
-          <div class="rounded-2xl border p-4 bg-white">
-            <div class="font-semibold">처절한 실행</div>
-            <p class="mt-1 text-sm text-gray-600">실패를 두려워하되 곧장 다시 시도.</p>
-          </div>
-          <div class="rounded-2xl border p-4 bg-white">
-            <div class="font-semibold">함께 버틴다</div>
-            <p class="mt-1 text-sm text-gray-600">‘내 일이 아니다’ 대신 ‘어떻게든 해보자’.</p>
+          <!-- ③ 카드 4개 (2열, 패딩/글씨 확대) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="rounded-2xl border p-5 bg-white">
+              <div class="font-semibold text-base">속도와 실행</div>
+              <p class="mt-1 text-sm md:text-base text-gray-600">작은 아이디어도 곧바로 실행, 빠른 피드백 루프.</p>
+            </div>
+            <div class="rounded-2xl border p-5 bg-white">
+              <div class="font-semibold text-base">직접적 임팩트</div>
+              <p class="mt-1 text-sm md:text-base text-gray-600">당신의 결과물이 매출과 바로 연결.</p>
+            </div>
+            <div class="rounded-2xl border p-5 bg-white">
+              <div class="font-semibold text-base">처절한 실행</div>
+              <p class="mt-1 text-sm md:text-base text-gray-600">실패를 두려워하되 곧장 다시 시도.</p>
+            </div>
+            <div class="rounded-2xl border p-5 bg-white">
+              <div class="font-semibold text-base">함께 버틴다</div>
+              <p class="mt-1 text-sm md:text-base text-gray-600">‘내 일이 아니다’ 대신 ‘어떻게든 해보자’.</p>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- RIGHT -->
       <div class="md:col-span-4 w-full">
-        <!-- 브랜드: 이미지 클릭 불가 / 텍스트 링크만 클릭 -->
-        <!-- 이츠스포츠 (실제 URL/이미지 적용) -->
+        <!-- 이츠스포츠 -->
         <div class="block">
           <div class="aspect-[16/9] w-full overflow-hidden rounded-2xl shadow-soft">
             <img
@@ -122,28 +124,40 @@
           </div>
         </div>
 
-        <!-- 팜밀리 1987 (예시: 나중에 실제 값으로 교체) -->
+        <!-- 팜밀리 1987 -->
         <div class="block mt-5">
           <div class="aspect-[16/9] w-full overflow-hidden rounded-2xl shadow-soft">
-            <img src="https://via.placeholder.com/1200x675.png?text=FAMILY+1987"
-                 alt="팜밀리 1987" class="h-full w-full object-cover select-none" loading="lazy">
+            <img
+              src="https://opening-attachments.greetinghr.com/2025-03-19/7fd03980-eb72-4c75-a5aa-026e76c39086/.jpg"
+              alt="팜밀리 1987"
+              class="h-full w-full object-cover select-none"
+              referrerpolicy="no-referrer"
+              loading="lazy"
+            >
           </div>
           <div class="flex items-center justify-between mt-2 text-sm">
             <span class="text-gray-800">팜밀리 1987</span>
-            <a class="text-gray-800 hover:opacity-80" href="https://example.com/farmily1987"
+            <a class="text-gray-800 hover:opacity-80"
+               href="https://farmily1987.kr/"
                target="_blank" rel="noopener noreferrer">홈페이지 바로가기 →</a>
           </div>
         </div>
 
-        <!-- 푸디랩 (예시: 나중에 실제 값으로 교체) -->
+        <!-- 푸디랩 -->
         <div class="block mt-5">
           <div class="aspect-[16/9] w-full overflow-hidden rounded-2xl shadow-soft">
-            <img src="https://via.placeholder.com/1200x675.png?text=FOODY+LAB"
-                 alt="푸디랩" class="h-full w-full object-cover select-none" loading="lazy">
+            <img
+              src="https://opening-attachments.greetinghr.com/2025-03-19/8bf6ad27-dad7-43f3-8820-de2eb121a902/.jpg"
+              alt="푸디랩"
+              class="h-full w-full object-cover select-none"
+              referrerpolicy="no-referrer"
+              loading="lazy"
+            >
           </div>
           <div class="flex items-center justify-between mt-2 text-sm">
             <span class="text-gray-800">푸디랩</span>
-            <a class="text-gray-800 hover:opacity-80" href="https://example.com/foodylab"
+            <a class="text-gray-800 hover:opacity-80"
+               href="https://foodylab.kr/"
                target="_blank" rel="noopener noreferrer">홈페이지 바로가기 →</a>
           </div>
         </div>
@@ -160,6 +174,6 @@
     </div>
   </section>
 
-  <!-- 이하 동일 (ABOUT/VALUES/ROLES/...) 필요시 유지 -->
+  <!-- (이하 다른 섹션들은 필요 시 유지) -->
 </body>
 </html>

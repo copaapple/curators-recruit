@@ -94,41 +94,41 @@
           </ul>
         </div>
 
-        <!-- 카드 4개 (2열) -->
-        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-          <div class="rounded-2xl border p-4 bg-white">
-            <div class="flex items-center gap-2">
-              <span class="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-gray-900/5 text-[16px]">🚀</span>
-              <div class="font-semibold text-[14px] md:text-[15px]">속도와 실행</div>
-            </div>
-            <p class="mt-1.5 text-[13px] text-gray-600">작은 아이디어도 곧바로 실행, 빠른 피드백 루프.</p>
-          </div>
+ <!-- 핵심 카드 4개 (규격 고정, 세로 중앙, 좌측 정렬) -->
+<div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3 self-start">
+  <!-- 공통: h-[128/136/144]로 동일 높이 강제 -->
+  <div class="rounded-2xl border p-5 bg-white h-[128px] md:h-[136px] lg:h-[144px] flex flex-col justify-center items-start text-left">
+    <div class="flex items-center gap-2">
+      <span class="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-gray-900/5 text-[16px]">🚀</span>
+      <div class="font-semibold text-[14px] md:text-[15px]">속도와 실행</div>
+    </div>
+    <p class="mt-2 text-[13px] text-gray-600">작은 아이디어도 곧바로 실행, 빠른 피드백 루프.</p>
+  </div>
 
-          <div class="rounded-2xl border p-4 bg-white">
-            <div class="flex items-center gap-2">
-              <span class="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-gray-900/5 text-[16px]">🎯</span>
-              <div class="font-semibold text-[14px] md:text-[15px]">직접적 임팩트</div>
-            </div>
-            <p class="mt-1.5 text-[13px] text-gray-600">당신의 결과물이 매출과 바로 연결.</p>
-          </div>
+  <div class="rounded-2xl border p-5 bg-white h-[128px] md:h-[136px] lg:h-[144px] flex flex-col justify-center items-start text-left">
+    <div class="flex items-center gap-2">
+      <span class="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-gray-900/5 text-[16px]">🎯</span>
+      <div class="font-semibold text-[14px] md:text-[15px]">직접적 임팩트</div>
+    </div>
+    <p class="mt-2 text-[13px] text-gray-600">당신의 결과물이 매출과 바로 연결.</p>
+  </div>
 
-          <div class="rounded-2xl border p-4 bg-white">
-            <div class="flex items-center gap-2">
-              <span class="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-gray-900/5 text-[16px]">🧗</span>
-              <div class="font-semibold text-[14px] md:text-[15px]">처절한 실행</div>
-            </div>
-            <p class="mt-1.5 text-[13px] text-gray-600">실패를 두려워하되 곧장 다시 시도.</p>
-          </div>
+  <div class="rounded-2xl border p-5 bg-white h-[128px] md:h-[136px] lg:h-[144px] flex flex-col justify-center items-start text-left">
+    <div class="flex items-center gap-2">
+      <span class="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-gray-900/5 text-[16px]">🧗</span>
+      <div class="font-semibold text-[14px] md:text-[15px]">처절한 실행</div>
+    </div>
+    <p class="mt-2 text-[13px] text-gray-600">실패를 두려워하되 곧장 다시 시도.</p>
+  </div>
 
-          <div class="rounded-2xl border p-4 bg-white lg:mt-6 xl:mt-8">
-            <div class="flex items-center gap-2">
-              <span class="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-gray-900/5 text-[16px]">🧑‍🤝‍🧑</span>
-              <div class="font-semibold text-[14px] md:text-[15px]">함께 버틴다</div>
-            </div>
-            <p class="mt-1.5 text-[13px] text-gray-600">‘내 일이 아니다’ 대신 ‘어떻게든 해보자’.</p>
-          </div>
-        </div>
-      </div>
+  <div class="rounded-2xl border p-5 bg-white h-[128px] md:h-[136px] lg:h-[144px] flex flex-col justify-center items-start text-left">
+    <div class="flex items-center gap-2">
+      <span class="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-gray-900/5 text-[16px]">🧑‍🤝‍🧑</span>
+      <div class="font-semibold text-[14px] md:text-[15px]">함께 버틴다</div>
+    </div>
+    <p class="mt-2 text-[13px] text-gray-600">‘내 일이 아니다’ 대신 ‘어떻게든 해보자’.</p>
+  </div>
+</div>
 
       <!-- RIGHT 브랜드 카드 -->
       <div class="md:col-span-4 w-full lg:mt-6 xl:mt-8">

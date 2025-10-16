@@ -62,13 +62,13 @@
   <section class="relative overflow-hidden">
     <div class="absolute inset-0 -z-10 bg-gradient-to-b from-gray-50 via-white to-white"></div>
 
-    <!-- ✅ 하단선 정렬: items-end 로 변경 -->
+    <!-- ✅ 푸디랩 하단과 왼쪽 섹션 하단 맞춤 -->
     <div class="mx-auto max-w-[72rem] px-4 pt-8 md:pt-10 pb-10 md:pb-12 grid md:grid-cols-12 gap-7 items-end">
       <!-- LEFT -->
       <div class="md:col-span-8 flex flex-col items-start">
-        <!-- ✅ 배지 살짝 크게: 텍스트/패딩/도트 업 -->
-        <div class="inline-flex items-center gap-2 rounded-full border px-3 py-1 text-[13px] font-medium">
-          <span class="inline-flex h-[8px] w-[8px] rounded-full pulse-light"></span>
+        <!-- ✅ 배지 약간 확대 -->
+        <div class="inline-flex items-center gap-2 rounded-full border px-3.5 py-1.5 text-[14px] font-semibold">
+          <span class="inline-flex h-[9px] w-[9px] rounded-full pulse-light"></span>
           지금은 생존 모드입니다
         </div>
 
@@ -85,8 +85,8 @@
           헬스&뷰티 브랜드를 직접 기획·운영하는 미디어커머스 팀, 큐레이터스.
         </p>
 
-        <!-- 숫자 3개 + 소개 + 4카드 (그대로) -->
-        <div class="mt-5 grid grid-cols-1 sm:grid-cols-3 gap-4 items-start">
+        <!-- 숫자 3개 -->
+        <div class="mt-5 grid grid-cols-1 sm:grid-cols-3 gap-4">
           <div class="rounded-2xl border bg-white shadow-soft p-6 flex flex-col justify-center items-center text-center">
             <div class="text-[14px] text-gray-500 font-medium">2024 매출</div>
             <div class="mt-1.5 text-[24px] font-extrabold tracking-tight leading-none">100억+</div>
@@ -102,74 +102,60 @@
             <div class="mt-1.5 text-[24px] font-extrabold tracking-tight leading-none">140만+</div>
             <div class="mt-1 text-[14px] text-gray-600">여기서 멈출 수 없다</div>
           </div>
+        </div>
 
-          <div class="sm:col-span-3 rounded-2xl border bg-gray-50 shadow-soft p-6 mt-1">
-            <h2 class="text-[18px] md:text-[20px] font-extrabold tracking-tight">여기는 진행형의 현장입니다</h2>
-            <p class="mt-2.5 text-[15px] text-gray-600 leading-relaxed">
-              아이디어를 바로 실행하고, 데이터를 보고, 곧바로 다음 버전을 만듭니다.
-              실행→피드백→반복 루프로 속도를 유지하고, 모든 결과물은 지표/매출과 직접 연결됩니다.
-            </p>
+        <!-- 소개 -->
+        <div class="mt-6 rounded-2xl border bg-gray-50 shadow-soft p-6">
+          <h2 class="text-[18px] md:text-[20px] font-extrabold tracking-tight">여기는 진행형의 현장입니다</h2>
+          <p class="mt-2.5 text-[15px] text-gray-600 leading-relaxed">
+            아이디어를 바로 실행하고, 데이터를 보고, 곧바로 다음 버전을 만듭니다.
+            실행→피드백→반복 루프로 속도를 유지하고, 모든 결과물은 지표/매출과 직접 연결됩니다.
+          </p>
+        </div>
+
+        <!-- 네 개 카드 -->
+        <div class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div class="rounded-2xl border p-5 bg-white min-h-[120px] flex flex-col justify-center">
+            <div class="flex items-center gap-2"><span class="text-[16px]">🚀</span><div class="font-semibold text-[14px] md:text-[15px]">속도와 실험</div></div>
+            <p class="mt-2 text-[13px] text-gray-600">아이디어는 바로 실행, 결과는 데이터로 검증.</p>
           </div>
-
-          <div class="sm:col-span-3 mt-3">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <div class="rounded-2xl border p-5 bg-white min-h-[120px] flex flex-col justify-center">
-                <div class="flex items-center gap-2">
-                  <span class="text-[16px]">🚀</span>
-                  <div class="font-semibold text-[14px] md:text-[15px]">속도와 실험</div>
-                </div>
-                <p class="mt-2 text-[13px] text-gray-600">아이디어는 바로 실행, 결과는 데이터로 검증.</p>
-              </div>
-
-              <div class="rounded-2xl border p-5 bg-white min-h-[120px] flex flex-col justify-center">
-                <div class="flex items-center gap-2">
-                  <span class="text-[16px]">🎯</span>
-                  <div class="font-semibold text-[14px] md:text-[15px]">지표로 증명</div>
-                </div>
-                <p class="mt-2 text-[13px] text-gray-600">당신의 실행이 실제 성과로 이어집니다.</p>
-              </div>
-
-              <div class="rounded-2xl border p-5 bg-white min-h-[120px] flex flex-col justify-center">
-                <div class="flex items-center gap-2">
-                  <span class="text-[16px]">🧗</span>
-                  <div class="font-semibold text-[14px] md:text-[15px]">끈질긴 개선</div>
-                </div>
-                <p class="mt-2 text-[13px] text-gray-600">실패를 복기하고 더 나은 버전으로 반복합니다.</p>
-              </div>
-
-              <div class="rounded-2xl border p-5 bg-white min-h-[120px] flex flex-col justify-center">
-                <div class="flex items-center gap-2">
-                  <span class="text-[16px]">🧑‍🤝‍🧑</span>
-                  <div class="font-semibold text-[14px] md:text-[15px]">함께 밀어붙인다</div>
-                </div>
-                <p class="mt-2 text-[13px] text-gray-600">서로의 실행을 끝까지 완성시킵니다.</p>
-              </div>
-            </div>
+          <div class="rounded-2xl border p-5 bg-white min-h-[120px] flex flex-col justify-center">
+            <div class="flex items-center gap-2"><span class="text-[16px]">🎯</span><div class="font-semibold text-[14px] md:text-[15px]">지표로 증명</div></div>
+            <p class="mt-2 text-[13px] text-gray-600">당신의 실행이 실제 성과로 이어집니다.</p>
+          </div>
+          <div class="rounded-2xl border p-5 bg-white min-h-[120px] flex flex-col justify-center">
+            <div class="flex items-center gap-2"><span class="text-[16px]">🧗</span><div class="font-semibold text-[14px] md:text-[15px]">끈질긴 개선</div></div>
+            <p class="mt-2 text-[13px] text-gray-600">실패를 복기하고 더 나은 버전으로 반복합니다.</p>
+          </div>
+          <div class="rounded-2xl border p-5 bg-white min-h-[120px] flex flex-col justify-center">
+            <div class="flex items-center gap-2"><span class="text-[16px]">🧑‍🤝‍🧑</span><div class="font-semibold text-[14px] md:text-[15px]">함께 밀어붙인다</div></div>
+            <p class="mt-2 text-[13px] text-gray-600">서로의 실행을 끝까지 완성시킵니다.</p>
           </div>
         </div>
-        <!-- /왼쪽 -->
       </div>
 
-      <!-- RIGHT: 브랜드 카드 3개 (그대로) -->
+      <!-- ✅ RIGHT: 이미지 크기 통일 + 브랜드명 볼드/확대 -->
       <div class="md:col-span-4 flex flex-col">
         <!-- 이츠스포츠 -->
         <div class="block">
-          <div class="aspect-[16/9] w-full overflow-hidden rounded-2xl shadow-soft">
-            <img src="https://opening-attachments.greetinghr.com/2025-03-19/23aee327-b46f-4a1e-8ce1-61d22aa55689/%282%29.jpg" alt="이츠스포츠" class="h-full w-full object-cover select-none" loading="lazy" referrerpolicy="no-referrer">
+          <div class="h-[260px] w-full overflow-hidden rounded-2xl shadow-soft">
+            <img src="https://opening-attachments.greetinghr.com/2025-03-19/23aee327-b46f-4a1e-8ce1-61d22aa55689/%282%29.jpg"
+                 alt="이츠스포츠" class="h-full w-full object-cover select-none" loading="lazy" referrerpolicy="no-referrer">
           </div>
-          <div class="flex items-center justify-between mt-1.5 text-[13px]">
-            <span class="text-gray-800">이츠스포츠</span>
+          <div class="flex items-center justify-between mt-1.5 text-[14px] font-semibold">
+            <span class="text-gray-900 font-bold text-[15px]">이츠스포츠</span>
             <a class="text-gray-800 hover:opacity-80" href="https://eatssports.com/" target="_blank" rel="noopener noreferrer">홈페이지 바로가기 →</a>
           </div>
         </div>
 
         <!-- 팜밀리 1987 -->
         <div class="block mt-4">
-          <div class="aspect-[16/9] w-full overflow-hidden rounded-2xl shadow-soft">
-            <img src="https://opening-attachments.greetinghr.com/2025-03-19/7fd03980-eb72-4c75-a5aa-026e76c39086/.jpg" alt="팜밀리 1987" class="h-full w-full object-cover select-none" loading="lazy" referrerpolicy="no-referrer">
+          <div class="h-[260px] w-full overflow-hidden rounded-2xl shadow-soft">
+            <img src="https://opening-attachments.greetinghr.com/2025-03-19/7fd03980-eb72-4c75-a5aa-026e76c39086/.jpg"
+                 alt="팜밀리 1987" class="h-full w-full object-cover select-none" loading="lazy" referrerpolicy="no-referrer">
           </div>
-          <div class="flex items-center justify-between mt-1.5 text-[13px]">
-            <span class="text-gray-800">팜밀리 1987</span>
+          <div class="flex items-center justify-between mt-1.5 text-[14px] font-semibold">
+            <span class="text-gray-900 font-bold text-[15px]">팜밀리 1987</span>
             <a class="text-gray-800 hover:opacity-80" href="https://farmily1987.kr/" target="_blank" rel="noopener noreferrer">홈페이지 바로가기 →</a>
           </div>
         </div>
@@ -177,10 +163,11 @@
         <!-- 푸디랩 -->
         <div class="block mt-4">
           <div class="h-[260px] w-full overflow-hidden rounded-2xl shadow-soft">
-            <img src="https://opening-attachments.greetinghr.com/2025-03-19/8bf6ad27-dad7-43f3-8820-de2eb121a902/.jpg" alt="푸디랩" class="h-full w-full object-cover select-none" loading="lazy" referrerpolicy="no-referrer">
+            <img src="https://opening-attachments.greetinghr.com/2025-03-19/8bf6ad27-dad7-43f3-8820-de2eb121a902/.jpg"
+                 alt="푸디랩" class="h-full w-full object-cover select-none" loading="lazy" referrerpolicy="no-referrer">
           </div>
-          <div class="flex items-center justify-between mt-1.5 text-[13px]">
-            <span class="text-gray-800">푸디랩</span>
+          <div class="flex items-center justify-between mt-1.5 text-[14px] font-semibold">
+            <span class="text-gray-900 font-bold text-[15px]">푸디랩</span>
             <a class="text-gray-800 hover:opacity-80" href="https://foodylab.kr/" target="_blank" rel="noopener noreferrer">홈페이지 바로가기 →</a>
           </div>
         </div>
@@ -294,7 +281,7 @@
     </div>
   </section>
 
-  <!-- APPLY -->
+  <!-- APPLY (요청 블록) -->
   <section id="apply" class="mx-auto max-w-[72rem] px-4 py-10">
     <div class="rounded-2xl bg-gray-900 text-white p-7 md:p-8">
       <div class="text-[10px] uppercase tracking-widest opacity-80">MAKE YOUR MOVE</div>

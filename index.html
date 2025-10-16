@@ -13,7 +13,6 @@
   <style>
     .shadow-soft { box-shadow: 0 10px 30px rgba(0,0,0,.04); }
     .card { border-radius: 1rem; border:1px solid rgba(17,24,39,.06); background:#fff; }
-
     /* 생존 모드 깜빡임 */
     @keyframes pulse-red {
       0%, 100% { background-color:#ef4444; box-shadow:0 0 0 0 rgba(239,68,68,.55); }
@@ -47,11 +46,12 @@
   <section class="relative overflow-hidden">
     <div class="absolute inset-0 -z-10 bg-gradient-to-b from-gray-50 via-white to-white"></div>
 
-    <!-- items-end: 왼쪽 4카드 하단 = 오른쪽 푸디랩 하단 정렬 -->
+    <!-- 왼쪽 카드 하단 = 오른쪽 푸디랩 하단 정렬 -->
     <div class="mx-auto max-w-[72rem] px-4 pt-8 md:pt-10 pb-10 md:pb-12 grid md:grid-cols-12 gap-7 items-end">
       <!-- LEFT -->
       <div class="md:col-span-8 flex flex-col">
-        <div class="inline-flex items-center gap-2 rounded-full border px-2.5 py-0.5 text-[10px] tracking-tight">
+        <!-- 짧은 배지: 텍스트 길이만큼만 -->
+        <div class="inline-flex w-auto items-center gap-2 rounded-full border px-2.5 py-0.5 text-[10px] tracking-tight">
           <span class="inline-flex h-2 w-2 rounded-full pulse-light"></span>
           지금은 생존 모드입니다
         </div>
@@ -67,7 +67,7 @@
           안정은 없지만 <span class="font-medium">실전의 자리</span>는 분명합니다. 답을 직접 만드는 동료를 기다립니다.
         </p>
         <p class="mt-2 text-[15px] text-gray-600 leading-relaxed">
-          헬스&amp;뷰티 브랜드를 직접 기획·운영하는 미디어커머스 팀, 큐레이터스.
+          헬스&뷰티 브랜드를 직접 기획·운영하는 미디어커머스 팀, 큐레이터스.
         </p>
 
         <!-- 숫자 블록 -->
@@ -291,9 +291,10 @@
         지금 이 무대에서 당신의 실행이 곧 우리의 생존이자, 당신 커리어의 성장입니다. 끝까지 해내며 함께 살아남을 동료, 바로 당신입니다.
       </p>
       <div class="mt-4 flex flex-col sm:flex-row gap-3">
-        <a href="https://curators.career.greetinghr.com/ko/curators?utm_source=careers_site&utm_medium=landing&utm_campaign=curators_survival"
-           target="_blank" rel="noreferrer"
-           class="inline-flex items-center justify-center rounded-2xl h-10 px-5 bg-white text-gray-900 hover:bg-white/90 text-[13px]">
+        <a
+          href="https://curators.career.greetinghr.com/ko/curators?utm_source=careers_site&utm_medium=landing&utm_campaign=curators_survival"
+          target="_blank" rel="noreferrer"
+          class="inline-flex items-center justify-center rounded-2xl h-10 px-5 bg-white text-gray-900 hover:bg-white/90 text-[13px]">
           그리팅에서 지원하기
         </a>
       </div>
@@ -306,11 +307,13 @@
       <div>© <span id="y"></span> Curators Inc. All rights reserved.</div>
       <div class="flex items-center gap-4">
         <span>서울 서초구 반포대로21길 49</span>
-        <span>채용 문의: bada_yp@eatssports.com</span>
+        <span>채용 문의: bada_yp@eatssports.com.</span>
       </div>
     </div>
   </footer>
 
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

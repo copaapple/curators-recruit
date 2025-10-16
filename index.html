@@ -47,9 +47,10 @@
   <section class="relative overflow-hidden">
     <div class="absolute inset-0 -z-10 bg-gradient-to-b from-gray-50 via-white to-white"></div>
 
-    <div class="mx-auto max-w-[72rem] px-4 pt-8 md:pt-10 pb-10 md:pb-12 grid md:grid-cols-12 gap-7 items-start">
+    <!-- items-end: 왼쪽 4카드 하단 = 오른쪽 푸디랩 하단 정렬 -->
+    <div class="mx-auto max-w-[72rem] px-4 pt-8 md:pt-10 pb-10 md:pb-12 grid md:grid-cols-12 gap-7 items-end">
       <!-- LEFT -->
-      <div class="md:col-span-8">
+      <div class="md:col-span-8 flex flex-col">
         <div class="inline-flex items-center gap-2 rounded-full border px-2.5 py-0.5 text-[10px] tracking-tight">
           <span class="inline-flex h-2 w-2 rounded-full pulse-light"></span>
           지금은 생존 모드입니다
@@ -63,15 +64,13 @@
         </h1>
 
         <p class="mt-3 text-[15px] text-gray-700 leading-relaxed">
-          안정은 없지만 <span class="font-medium">실행의 무대</span>는 있습니다.
-          완성된 조직이 아니라, <span class="font-medium">직접 브랜드를 만들어낼 동료</span>를 기다립니다.
+          안정은 없지만 <span class="font-medium">실전의 자리</span>는 분명합니다. 답을 직접 만드는 동료를 기다립니다.
         </p>
-
         <p class="mt-2 text-[15px] text-gray-600 leading-relaxed">
           헬스&amp;뷰티 브랜드를 직접 기획·운영하는 미디어커머스 팀, 큐레이터스.
         </p>
 
-        <!-- 숫자 블록 (항상 '여기는 진행형...' 위) -->
+        <!-- 숫자 블록 -->
         <div class="mt-5 grid grid-cols-2 sm:grid-cols-3 gap-3">
           <div class="rounded-xl border p-4 bg-white">
             <div class="text-[11px] text-gray-500">2024 매출</div>
@@ -85,14 +84,59 @@
           </div>
           <div class="rounded-xl border p-4 bg-white">
             <div class="text-[11px] text-gray-500">누적 판매</div>
-            <div class="mt-1 text-[16px] font-extrabold tracking-tight">140만+ </div>
+            <div class="mt-1 text-[16px] font-extrabold tracking-tight">140만+</div>
             <div class="text-[12px] text-gray-500">여기서 멈출 수 없다</div>
+          </div>
+        </div>
+
+        <!-- C안 소개 + 4카드 -->
+        <div class="mt-6">
+          <div class="rounded-2xl border bg-gray-50 shadow-soft p-6">
+            <h2 class="text-[18px] md:text-[20px] font-extrabold tracking-tight">여기는 진행형의 현장입니다</h2>
+            <p class="mt-2.5 text-[15px] text-gray-600 leading-relaxed">
+              아이디어를 바로 실행하고, 데이터를 보고, 곧바로 다음 버전을 만듭니다.
+              실행→피드백→반복 루프로 속도를 유지하고, 모든 결과물은 지표/매출과 직접 연결됩니다.
+            </p>
+          </div>
+
+          <div class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div class="rounded-2xl border p-5 bg-white min-h-[120px] flex flex-col justify-center">
+              <div class="flex items-center gap-2">
+                <span class="text-[16px]">🚀</span>
+                <div class="font-semibold text-[14px] md:text-[15px]">속도와 실험</div>
+              </div>
+              <p class="mt-2 text-[13px] text-gray-600">아이디어는 바로 실행, 결과는 데이터로 검증.</p>
+            </div>
+
+            <div class="rounded-2xl border p-5 bg-white min-h-[120px] flex flex-col justify-center">
+              <div class="flex items-center gap-2">
+                <span class="text-[16px]">🎯</span>
+                <div class="font-semibold text-[14px] md:text-[15px]">지표로 증명</div>
+              </div>
+              <p class="mt-2 text-[13px] text-gray-600">당신의 실행이 실제 성과로 이어집니다.</p>
+            </div>
+
+            <div class="rounded-2xl border p-5 bg-white min-h-[120px] flex flex-col justify-center">
+              <div class="flex items-center gap-2">
+                <span class="text-[16px]">🧗</span>
+                <div class="font-semibold text-[14px] md:text-[15px]">끈질긴 개선</div>
+              </div>
+              <p class="mt-2 text-[13px] text-gray-600">실패를 복기하고 더 나은 버전으로 반복합니다.</p>
+            </div>
+
+            <div class="rounded-2xl border p-5 bg-white min-h-[120px] flex flex-col justify-center">
+              <div class="flex items-center gap-2">
+                <span class="text-[16px]">🧑‍🤝‍🧑</span>
+                <div class="font-semibold text-[14px] md:text-[15px]">함께 밀어붙인다</div>
+              </div>
+              <p class="mt-2 text-[13px] text-gray-600">서로의 실행을 끝까지 완성시킵니다.</p>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- RIGHT: 브랜드 카드들 (순서 고정: 이츠스포츠 → 팜밀리) -->
-      <div class="md:col-span-4 w-full lg:mt-6 xl:mt-8">
+      <!-- RIGHT: 이츠스포츠 → 팜밀리 1987 → 푸디랩 -->
+      <div class="md:col-span-4 flex flex-col">
         <!-- 이츠스포츠 -->
         <div class="block">
           <div class="aspect-[16/9] w-full overflow-hidden rounded-2xl shadow-soft">
@@ -116,13 +160,10 @@
             <a class="text-gray-800 hover:opacity-80" href="https://farmily1987.kr/" target="_blank" rel="noopener noreferrer">홈페이지 바로가기 →</a>
           </div>
         </div>
-      </div>
 
-      <!-- 다음 행: (왼) 푸디랩  ┃  (오른) 여기는 진행형 + 4카드  -->
-      <div class="md:col-span-12 grid md:grid-cols-12 gap-3 items-end">
-        <!-- 푸디랩 : 반드시 팜밀리 바로 아래 -->
-        <div class="md:col-span-4">
-          <div class="w-full overflow-hidden rounded-2xl shadow-soft h-[260px]">
+        <!-- 푸디랩 (팜밀리 바로 아래) -->
+        <div class="block mt-4">
+          <div class="h-[260px] w-full overflow-hidden rounded-2xl shadow-soft">
             <img src="https://opening-attachments.greetinghr.com/2025-03-19/8bf6ad27-dad7-43f3-8820-de2eb121a902/.jpg"
                  alt="푸디랩" class="h-full w-full object-cover select-none" loading="lazy" referrerpolicy="no-referrer">
           </div>
@@ -131,51 +172,7 @@
             <a class="text-gray-800 hover:opacity-80" href="https://foodylab.kr/" target="_blank" rel="noopener noreferrer">홈페이지 바로가기 →</a>
           </div>
         </div>
-
-        <!-- 여기는 진행형 + 문화 카드 (푸디랩 하단과 정렬) -->
-        <div class="md:col-span-8">
-          <!-- C안 소개 -->
-          <div class="rounded-2xl border bg-gray-50 shadow-soft p-6">
-            <h2 class="text-[18px] md:text-[20px] font-extrabold tracking-tight">여기는 진행형의 현장입니다</h2>
-            <p class="mt-2.5 text-[15px] text-gray-600 leading-relaxed">
-              아이디어를 바로 실행하고, 데이터를 보고, 곧바로 다음 버전을 만듭니다. 실행→피드백→반복
-              루프로 속도를 유지하고, 모든 결과물은 지표/매출과 직접 연결됩니다.
-            </p>
-          </div>
-
-          <!-- 4카드: 총 높이 = 2행 * 120px + 간격(=푸디랩 하단과 정렬) -->
-          <div class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <div class="rounded-2xl border p-5 bg-white min-h-[120px] flex flex-col justify-center">
-              <div class="flex items-center gap-2">
-                <span class="text-[16px]">🚀</span><div class="font-semibold text-[14px] md:text-[15px]">속도와 실행</div>
-              </div>
-              <p class="mt-2 text-[13px] text-gray-600">작은 아이디어도 곧바로 실행, 빠른 피드백 루프.</p>
-            </div>
-
-            <div class="rounded-2xl border p-5 bg-white min-h-[120px] flex flex-col justify-center">
-              <div class="flex items-center gap-2">
-                <span class="text-[16px]">🎯</span><div class="font-semibold text-[14px] md:text-[15px]">직접적 임팩트</div>
-              </div>
-              <p class="mt-2 text-[13px] text-gray-600">당신의 결과물이 매출과 바로 연결.</p>
-            </div>
-
-            <div class="rounded-2xl border p-5 bg-white min-h-[120px] flex flex-col justify-center">
-              <div class="flex items-center gap-2">
-                <span class="text-[16px]">🧗</span><div class="font-semibold text-[14px] md:text-[15px]">처절한 실행</div>
-              </div>
-              <p class="mt-2 text-[13px] text-gray-600">실패를 두려워하되 곧장 다시 시도.</p>
-            </div>
-
-            <div class="rounded-2xl border p-5 bg-white min-h-[120px] flex flex-col justify-center">
-              <div class="flex items-center gap-2">
-                <span class="text-[16px]">🧑‍🤝‍🧑</span><div class="font-semibold text-[14px] md:text-[15px]">함께 버틴다</div>
-              </div>
-              <p class="mt-2 text-[13px] text-gray-600">‘내 일이 아니다’ 대신 ‘어떻게든 해보자’.</p>
-            </div>
-          </div>
-        </div>
       </div>
-      <!-- /푸디랩 행 끝 -->
     </div>
   </section>
 
@@ -186,13 +183,14 @@
         <h3 class="text-[18px] md:text-[20px] font-extrabold">우리가 원하는 동료</h3>
         <p class="mt-1.5 text-[13px] text-gray-600">함께 끝까지 실행하는 동료를 찾습니다.</p>
       </div>
+
       <div class="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-        <div class="card p-4 text-[13px]">화려한 성공보다 처절한 실행을 선택</div>
-        <div class="card p-4 text-[13px]">끝까지 결과물을 만드는 책임감</div>
-        <div class="card p-4 text-[13px]">‘내 일이 아니다’ 대신 ‘어떻게든 해보자’</div>
-        <div class="card p-4 text-[13px]">실패를 두려워하되 곧장 다시 일어섬</div>
-        <div class="card p-4 text-[13px]">팀과 함께 성장의 보람을 느끼는 사람</div>
-        <div class="card p-4 text-[13px]">스펙보다 태도로 증명하는 사람</div>
+        <div class="card p-4 text-[13px]">화려함보다 진심으로 실행하는 사람</div>
+        <div class="card p-4 text-[13px]">결과를 끝까지 완성하는 책임감</div>
+        <div class="card p-4 text-[13px]">문제를 외면하지 않고 스스로 해법을 찾는 사람</div>
+        <div class="card p-4 text-[13px]">실패를 성장의 일부로 받아들이는 사람</div>
+        <div class="card p-4 text-[13px]">팀의 성장을 자기 일처럼 기뻐하는 사람</div>
+        <div class="card p-4 text-[13px]">이력보다 태도로 신뢰를 쌓는 사람</div>
       </div>
     </div>
   </section>
@@ -240,13 +238,14 @@
             <ul class="mt-2 space-y-1 list-disc list-inside">
               <li>실무형 인턴십<br>(계약 1개월 + 인턴 2개월 후 정규직 전환 검토)</li>
               <li>주 5일 · 09:00~10:00 사이 자율 출근제 운영</li>
-              <li>주소 =: 서울 서초구 반포대로21길 49, 2층</li>
+              <li>주소: 서울 서초구 반포대로21길 49, 2층</li>
               <li>급여: 회사 내규 (면접 후 결정)</li>
             </ul>
           </div>
-          <a href="https://curators.career.greetinghr.com/ko/curators?utm_source=careers_site&utm_medium=landing_roles&utm_campaign=curators_survival"
-             target="_blank" rel="noreferrer"
-             class="inline-flex items-center justify-center rounded-2xl h-10 w-full bg-black text-white text-[14px]">
+          <a
+            href="https://curators.career.greetinghr.com/ko/curators?utm_source=careers_site&utm_medium=landing_roles&utm_campaign=curators_survival"
+            target="_blank" rel="noreferrer"
+            class="inline-flex items-center justify-center rounded-2xl h-10 w-full bg-black text-white text-[14px]">
             이 포지션 지원하기
           </a>
         </div>

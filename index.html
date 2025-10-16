@@ -13,12 +13,13 @@
   <style>
     .shadow-soft { box-shadow: 0 10px 30px rgba(0,0,0,.04); }
     .card { border-radius: 1rem; border:1px solid rgba(17,24,39,.06); background:#fff; }
-    /* 생존 모드 깜빡임 */
-    @keyframes pulse-red {
-      0%, 100% { background-color:#ef4444; box-shadow:0 0 0 0 rgba(239,68,68,.55); }
-      50%      { background-color:#f87171; box-shadow:0 0 8px 4px rgba(239,68,68,.28); }
+
+    /* 생존 모드 깜빡임 — 점/글로우를 더 작게 */
+    @keyframes pulse-red-sm {
+      0%, 100% { background-color:#ef4444; box-shadow:0 0 0 0 rgba(239,68,68,.4); }
+      50%      { background-color:#f87171; box-shadow:0 0 5px 2px rgba(239,68,68,.25); }
     }
-    .pulse-light { animation:pulse-red 1s infinite; }
+    .pulse-light { animation:pulse-red-sm 1s infinite; }
     @media (prefers-reduced-motion: reduce) {
       .pulse-light { animation:none; background-color:#ef4444; box-shadow:none; }
     }
@@ -49,15 +50,15 @@
     <!-- 왼쪽 카드 하단 = 오른쪽 푸디랩 하단 정렬 -->
     <div class="mx-auto max-w-[72rem] px-4 pt-8 md:pt-10 pb-10 md:pb-12 grid md:grid-cols-12 gap-7 items-end">
       <!-- LEFT -->
-      <div class="md:col-span-8 flex flex-col">
+      <div class="md:col-span-8 flex flex-col items-start">
         <!-- 짧은 배지: 텍스트 길이만큼만 -->
-        <div class="inline-flex w-auto items-center gap-1.5 rounded-full border px-2 py-[1px] text-[10px] tracking-tight">
+        <div class="inline-flex self-start w-fit items-center gap-1.5 rounded-full border px-2 py-[1px] text-[10px] tracking-tight">
           <span class="inline-flex h-[6px] w-[6px] rounded-full pulse-light"></span>
           지금은 생존 모드입니다
         </div>
 
-        <!-- H1 -->
-        <h1 class="mt-3 text-[26px] sm:text-[30px] lg:text-[34px] font-extrabold leading-snug">
+        <!-- H1 : 여백/줄간격 압축 -->
+        <h1 class="mt-1 text-[26px] sm:text-[30px] lg:text-[34px] font-extrabold leading-tight">
           우리는 아직 완성되지 않았습니다.<br class="hidden sm:block">
           매일 흔들리지만, 생존을 넘어
           <span class="underline decoration-4 decoration-black underline-offset-4 whitespace-nowrap">새로운 성장 곡선</span>을 그리고 있습니다.
@@ -89,7 +90,7 @@
           </div>
         </div>
 
-        <!-- C안 소개 + 4카드 -->
+        <!-- 소개 + 4카드 -->
         <div class="mt-6">
           <div class="rounded-2xl border bg-gray-50 shadow-soft p-6">
             <h2 class="text-[18px] md:text-[20px] font-extrabold tracking-tight">여기는 진행형의 현장입니다</h2>
@@ -101,34 +102,19 @@
 
           <div class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div class="rounded-2xl border p-5 bg-white min-h-[120px] flex flex-col justify-center">
-              <div class="flex items-center gap-2">
-                <span class="text-[16px]">🚀</span>
-                <div class="font-semibold text-[14px] md:text-[15px]">속도와 실험</div>
-              </div>
+              <div class="flex items-center gap-2"><span class="text-[16px]">🚀</span><div class="font-semibold text-[14px] md:text-[15px]">속도와 실험</div></div>
               <p class="mt-2 text-[13px] text-gray-600">아이디어는 바로 실행, 결과는 데이터로 검증.</p>
             </div>
-
             <div class="rounded-2xl border p-5 bg-white min-h-[120px] flex flex-col justify-center">
-              <div class="flex items-center gap-2">
-                <span class="text-[16px]">🎯</span>
-                <div class="font-semibold text-[14px] md:text-[15px]">지표로 증명</div>
-              </div>
+              <div class="flex items-center gap-2"><span class="text-[16px]">🎯</span><div class="font-semibold text-[14px] md:text-[15px]">지표로 증명</div></div>
               <p class="mt-2 text-[13px] text-gray-600">당신의 실행이 실제 성과로 이어집니다.</p>
             </div>
-
             <div class="rounded-2xl border p-5 bg-white min-h-[120px] flex flex-col justify-center">
-              <div class="flex items-center gap-2">
-                <span class="text-[16px]">🧗</span>
-                <div class="font-semibold text-[14px] md:text-[15px]">끈질긴 개선</div>
-              </div>
+              <div class="flex items-center gap-2"><span class="text-[16px]">🧗</span><div class="font-semibold text-[14px] md:text-[15px]">끈질긴 개선</div></div>
               <p class="mt-2 text-[13px] text-gray-600">실패를 복기하고 더 나은 버전으로 반복합니다.</p>
             </div>
-
             <div class="rounded-2xl border p-5 bg-white min-h-[120px] flex flex-col justify-center">
-              <div class="flex items-center gap-2">
-                <span class="text-[16px]">🧑‍🤝‍🧑</span>
-                <div class="font-semibold text-[14px] md:text-[15px]">함께 밀어붙인다</div>
-              </div>
+              <div class="flex items-center gap-2"><span class="text-[16px]">🧑‍🤝‍🧑</span><div class="font-semibold text-[14px] md:text-[15px]">함께 밀어붙인다</div></div>
               <p class="mt-2 text-[13px] text-gray-600">서로의 실행을 끝까지 완성시킵니다.</p>
             </div>
           </div>
@@ -137,11 +123,9 @@
 
       <!-- RIGHT: 이츠스포츠 → 팜밀리 1987 → 푸디랩 -->
       <div class="md:col-span-4 flex flex-col">
-        <!-- 이츠스포츠 -->
         <div class="block">
           <div class="aspect-[16/9] w-full overflow-hidden rounded-2xl shadow-soft">
-            <img src="https://opening-attachments.greetinghr.com/2025-03-19/23aee327-b46f-4a1e-8ce1-61d22aa55689/%282%29.jpg"
-                 alt="이츠스포츠" class="h-full w-full object-cover select-none" loading="lazy" referrerpolicy="no-referrer">
+            <img src="https://opening-attachments.greetinghr.com/2025-03-19/23aee327-b46f-4a1e-8ce1-61d22aa55689/%282%29.jpg" alt="이츠스포츠" class="h-full w-full object-cover select-none" loading="lazy" referrerpolicy="no-referrer">
           </div>
           <div class="flex items-center justify-between mt-1.5 text-[13px]">
             <span class="text-gray-800">이츠스포츠</span>
@@ -149,11 +133,9 @@
           </div>
         </div>
 
-        <!-- 팜밀리 1987 -->
         <div class="block mt-4">
           <div class="aspect-[16/9] w-full overflow-hidden rounded-2xl shadow-soft">
-            <img src="https://opening-attachments.greetinghr.com/2025-03-19/7fd03980-eb72-4c75-a5aa-026e76c39086/.jpg"
-                 alt="팜밀리 1987" class="h-full w-full object-cover select-none" loading="lazy" referrerpolicy="no-referrer">
+            <img src="https://opening-attachments.greetinghr.com/2025-03-19/7fd03980-eb72-4c75-a5aa-026e76c39086/.jpg" alt="팜밀리 1987" class="h-full w-full object-cover select-none" loading="lazy" referrerpolicy="no-referrer">
           </div>
           <div class="flex items-center justify-between mt-1.5 text-[13px]">
             <span class="text-gray-800">팜밀리 1987</span>
@@ -161,11 +143,9 @@
           </div>
         </div>
 
-        <!-- 푸디랩 (팜밀리 바로 아래) -->
         <div class="block mt-4">
           <div class="h-[260px] w-full overflow-hidden rounded-2xl shadow-soft">
-            <img src="https://opening-attachments.greetinghr.com/2025-03-19/8bf6ad27-dad7-43f3-8820-de2eb121a902/.jpg"
-                 alt="푸디랩" class="h-full w-full object-cover select-none" loading="lazy" referrerpolicy="no-referrer">
+            <img src="https://opening-attachments.greetinghr.com/2025-03-19/8bf6ad27-dad7-43f3-8820-de2eb121a902/.jpg" alt="푸디랩" class="h-full w-full object-cover select-none" loading="lazy" referrerpolicy="no-referrer">
           </div>
           <div class="flex items-center justify-between mt-1.5 text-[13px]">
             <span class="text-gray-800">푸디랩</span>
@@ -253,42 +233,20 @@
     </div>
   </section>
 
-  <!-- BENEFITS -->
-  <section id="benefits" class="mx-auto max-w-[72rem] px-4 py-9">
-    <div class="rounded-2xl border p-6 md:p-7 bg-white">
-      <div class="flex items-center gap-3">
-        <span class="font-semibold text-[18px] md:text-[20px]">복리후생</span>
-      </div>
-      <div class="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-[13px]">
-        <div class="card p-4">자유로운 근무 환경</div>
-        <div class="card p-4">리프레시 휴가</div>
-        <div class="card p-4">임직원 자사몰 할인</div>
-        <div class="card p-4">성과 기반 인센티브</div>
-        <div class="card p-4">장기근속 포상</div>
-        <div class="card p-4">교육 및 최고 수준의 장비 제공</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROCESS -->
-  <section id="process" class="mx-auto max-w-[72rem] px-4 py-9">
-    <h3 class="text-[18px] md:text-[20px] font-extrabold tracking-tight">전형 절차</h3>
-    <div class="mt-4 grid md:grid-cols-5 gap-3">
-      <div class="rounded-xl border p-4"><div class="text-[11px] text-gray-500">STEP 1</div><div class="mt-1 font-semibold text-[14px]">서류 전형 (포트폴리오 포함)</div></div>
-      <div class="rounded-xl border p-4"><div class="text-[11px] text-gray-500">STEP 2</div><div class="mt-1 font-semibold text-[14px]">대면 인터뷰</div></div>
-      <div class="rounded-xl border p-4"><div class="text-[11px] text-gray-500">STEP 3</div><div class="mt-1 font-semibold text-[14px]">추가 인터뷰</div><div class="mt-1 text-[11px] text-gray-400">※ 필요 시 진행</div></div>
-      <div class="rounded-xl border p-4"><div class="text-[11px] text-gray-500">STEP 4</div><div class="mt-1 font-semibold text-[14px]">처우 협의</div></div>
-      <div class="rounded-xl border p-4"><div class="text-[11px] text-gray-500">STEP 5</div><div class="mt-1 font-semibold text-[14px]">오퍼레터 및 합격</div></div>
-    </div>
-  </section>
-
   <!-- APPLY -->
   <section id="apply" class="mx-auto max-w-[72rem] px-4 py-10">
     <div class="rounded-2xl bg-gray-900 text-white p-7 md:p-8">
       <div class="text-[10px] uppercase tracking-widest opacity-80">MAKE YOUR MOVE</div>
-      <h3 class="mt-2 text-[18px] md:text-[20px] font-extrabold leading-snug">안정은 없습니다. 하지만 진짜 실전이 있습니다.</h3>
+      <h3 class="mt-2 text-[18px] md:text-[20px] font-extrabold leading-snug">
+        완벽한 회사는 없습니다. 하지만 진짜 무대는 여기에 있습니다.
+      </h3>
       <p class="mt-2 text-gray-300 leading-relaxed text-[13px] md:text-[14px]">
-        지금 이 무대에서 당신의 실행이 곧 우리의 생존이자, 당신 커리어의 성장입니다. 끝까지 해내며 함께 살아남을 동료, 바로 당신입니다.
+        안정 대신 실전을 택했고, 과정 대신 결과로 증명합니다.<br>
+        지금 이 생존의 무대에서 당신의 실행이 곧 우리의 생존이자,<br>
+        당신 커리어의 곡선을 다시 그릴 순간입니다.
+      </p>
+      <p class="mt-4 font-semibold text-[14px] md:text-[15px] text-white/90">
+        지금, 함께 증명하세요.
       </p>
       <div class="mt-4 flex flex-col sm:flex-row gap-3">
         <a
@@ -312,8 +270,6 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>

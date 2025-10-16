@@ -5,33 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CURATORS 채용 – 지금은 생존 모드입니다</title>
 
+  <!-- 검색/공유용 메타 -->
   <meta name="description" content="큐레이터스는 생존형 D2C 브랜드를 만드는 팀입니다. 안정이 아닌 진행형. 끝까지 실행하며 곡선을 다시 그릴 동료를 찾습니다." />
   <meta property="og:title" content="CURATORS 채용 – 지금은 생존 모드입니다" />
   <meta property="og:description" content="큐레이터스는 생존형 D2C 브랜드를 만드는 팀입니다. 안정이 아닌 진행형. 끝까지 실행하며 곡선을 다시 그릴 동료를 찾습니다." />
   <meta property="og:type" content="website" />
   <meta name="theme-color" content="#111827" />
 
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .shadow-soft { box-shadow: 0 10px 30px rgba(0,0,0,.06); }
-    .card { border-radius: 1rem; border:1px solid rgba(17,24,39,.08); background:#fff; }
 
-    /* ====== 정렬 미세조정값 (large 화면 기준) ====== */
-    :root{
-      --TUNE-RIGHT-TOP: 10px;     /* 오른쪽 전체 시작 위치(이츠스포츠 위쪽 여백) */
-      --TUNE-FEAT-H: 114px;       /* 4카드 개별 높이  ← 처절/함께 하단선 맞춤 핵심값 */
-      --TUNE-FEAT-GAP: 14px;      /* 4카드 사이 간격  */
-      --TUNE-FEAT-NUDGE: 2px;     /* 4카드 블록 전체 아래로 살짝 내리기(0~3px) */
-    }
-    @media (min-width:1024px){
-      .right-col-offset{ margin-top: var(--TUNE-RIGHT-TOP); }
-      .feature-grid{ gap: var(--TUNE-FEAT-GAP); margin-bottom: var(--TUNE-FEAT-NUDGE); }
-      .feature-grid .feature-card{ height: var(--TUNE-FEAT-H); }
-    }
+  <!-- Custom -->
+  <style>
+    .shadow-soft { box-shadow: 0 10px 30px rgba(0,0,0,.04); }
+    .card { border-radius: 1rem; border:1px solid rgba(17,24,39,.06); background:#fff; }
   </style>
 </head>
 
-<body class="min-h-screen bg-white text-gray-900 antialiased break-keep">
+<body class="min-h-screen bg-white text-gray-900 antialiased break-keep scale-[0.95] origin-top">
   <!-- NAV -->
   <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b">
     <div class="mx-auto max-w-[72rem] px-4 py-2.5 flex items-center justify-between">
@@ -52,10 +43,10 @@
   <section class="relative overflow-hidden">
     <div class="absolute inset-0 -z-10 bg-gradient-to-b from-gray-50 via-white to-white"></div>
 
-    <!-- 12열 + 행 제어 -->
+    <!-- 12열 그리드 + 행 정렬 -->
     <div class="mx-auto max-w-[72rem] px-4 pt-8 md:pt-10 pb-10 md:pb-12 grid md:grid-cols-12 md:auto-rows-min gap-7 items-start">
 
-      <!-- LEFT TOP (Row 1~2) -->
+      <!-- LEFT TOP (헤드라인/지표만 남김 — 중복 소개 박스 삭제) -->
       <div class="md:col-span-8 md:row-start-1 md:row-end-3">
         <div class="inline-flex items-center gap-2 rounded-full border px-2.5 py-0.5 text-[10px] tracking-tight">
           <span class="inline-flex h-2 w-2 rounded-full bg-black"></span>
@@ -64,11 +55,13 @@
 
         <h1 class="mt-3 text-[26px] sm:text-[30px] lg:text-[34px] font-extrabold leading-snug">
           우리는 아직 완성되지 않았습니다.<br class="hidden sm:block">
-          매일 흔들리지만, 생존을 넘어 <span class="underline decoration-4 decoration-black underline-offset-4 whitespace-nowrap">새로운 성장 곡선</span>을 그리고 있습니다.
+          매일 흔들리지만, 생존을 넘어
+          <span class="underline decoration-4 decoration-black underline-offset-4 whitespace-nowrap">새로운 성장 곡선</span>을 그리고 있습니다.
         </h1>
 
         <p class="mt-3 text-[15px] text-gray-700 leading-relaxed">
-          안정은 없지만 <span class="font-medium">실행의 무대</span>는 있습니다. 완성된 조직이 아니라, <span class="font-medium">직접 브랜드를 만들어낼 동료</span>를 기다립니다.
+          안정은 없지만 <span class="font-medium">실행의 무대</span>는 있습니다.
+          완성된 조직이 아니라, <span class="font-medium">직접 브랜드를 만들어낼 동료</span>를 기다립니다.
         </p>
         <p class="mt-2 text-[15px] text-gray-600 leading-relaxed">
           헬스&amp;뷰티 브랜드를 직접 기획·운영하는 미디어커머스 팀, 큐레이터스.
@@ -94,30 +87,251 @@
         </div>
       </div>
 
-      <!-- ===== RIGHT COLUMN (이츠스포츠 → 팜밀리 → 푸디랩) ===== -->
-      <div class="md:col-span-4 md:row-start-1 right-col-offset">
-        <!-- 이츠스포츠 -->
+      <!-- RIGHT BRAND #1 -->
+      <div class="md:col-span-4 md:row-start-1 w-full lg:mt-1">
         <div class="aspect-[16/9] w-full overflow-hidden rounded-2xl shadow-soft">
-          <img src="https://opening-attachments.greetinghr.com/2025-03-19/23aee327-b46f-4a1e-8ce1-61d22aa55689/%282%29.jpg"
-               alt="이츠스포츠" class="h-full w-full object-cover select-none" loading="lazy" referrerpolicy="no-referrer">
+          <img src="https://opening-attachments.greetinghr.com/2025-03-19/23aee327-b46f-4a1e-8ce1-61d22aa55689/%282%29.jpg" alt="이츠스포츠" class="h-full w-full object-cover select-none" referrerpolicy="no-referrer" loading="lazy">
         </div>
         <div class="flex items-center justify-between mt-1.5 text-[13px]">
           <span class="text-gray-800">이츠스포츠</span>
           <a class="text-gray-800 hover:opacity-80" href="https://eatssports.com/" target="_blank" rel="noopener noreferrer">홈페이지 바로가기 →</a>
         </div>
+      </div>
 
-        <!-- 팜밀리 1987 -->
-        <div class="mt-4 aspect-[16/9] w-full overflow-hidden rounded-2xl shadow-soft">
-          <img src="https://opening-attachments.greetinghr.com/2025-03-19/7fd03980-eb72-4c75-a5aa-026e76c39086/.jpg"
-               alt="팜밀리 1987" class="h-full w-full object-cover select-none" loading="lazy" referrerpolicy="no-referrer">
+      <!-- RIGHT BRAND #2 -->
+      <div class="md:col-span-4 md:row-start-2">
+        <div class="aspect-[16/9] w-full overflow-hidden rounded-2xl shadow-soft">
+          <img src="https://opening-attachments.greetinghr.com/2025-03-19/7fd03980-eb72-4c75-a5aa-026e76c39086/.jpg" alt="팜밀리 1987" class="h-full w-full object-cover select-none" referrerpolicy="no-referrer" loading="lazy">
         </div>
         <div class="flex items-center justify-between mt-1.5 text-[13px]">
           <span class="text-gray-800">팜밀리 1987</span>
           <a class="text-gray-800 hover:opacity-80" href="https://farmily1987.kr/" target="_blank" rel="noopener noreferrer">홈페이지 바로가기 →</a>
         </div>
+      </div>
 
-        <!-- 푸디랩 -->
-        <div class="mt-4 aspect-[16/9] w-full overflow-hidden rounded-2xl shadow-soft" id="foodylab-card">
-          <img src="https://opening-attachments.greetinghr.com/2025-03-19/8bf6ad27-dad7-43f3-8820-de2eb121a902/.jpg"
-               alt="푸디랩" class="h-full w-full object-cover select-none" loading="lazy" referrerpolicy="no-referrer">
-        </di
+      <!-- RIGHT BRAND #3: 푸디랩 (오른쪽) -->
+      <div class="md:col-span-4 md:row-start-3">
+        <div class="aspect-[16/9] w-full overflow-hidden rounded-2xl shadow-soft">
+          <img src="https://opening-attachments.greetinghr.com/2025-03-19/8bf6ad27-dad7-43f3-8820-de2eb121a902/.jpg" alt="푸디랩" class="h-full w-full object-cover select-none" referrerpolicy="no-referrer" loading="lazy">
+        </div>
+        <div class="flex items-center justify-between mt-1.5 text-[13px]">
+          <span class="text-gray-800">푸디랩</span>
+          <a class="text-gray-800 hover:opacity-80" href="https://foodylab.kr/" target="_blank" rel="noopener noreferrer">홈페이지 바로가기 →</a>
+        </div>
+      </div>
+
+      <!-- LEFT BOTTOM: 소개 박스 + 4카드 (왼쪽) — 푸디랩과 ‘같은 행’ -->
+      <div class="md:col-span-8 md:row-start-3">
+        <!-- 선 맞추기 위해 상단 마진 제거 -->
+        <div class="rounded-2xl border bg-white shadow-soft p-5">
+          <h2 class="text-xl md:text-2xl font-extrabold tracking-tight">여기는 진행형의 현장입니다</h2>
+          <p class="mt-2 text-[15px] md:text-base text-gray-600 leading-relaxed">
+            아이디어를 바로 실행하고, 데이터를 보고, 곧바로 다음 버전을 만듭니다. 실행→피드백→반복 루프로 속도를 유지하고,
+            모든 결과물은 지표/매출과 직접 연결됩니다.
+          </p>
+        </div>
+
+        <!-- 핵심 4카드: 동일 규격 + 좌측정렬 -->
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div class="rounded-2xl border p-5 bg-white h-[128px] md:h-[136px] lg:h-[140px] flex flex-col justify-center items-start text-left">
+            <div class="flex items-center gap-2">
+              <span class="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-gray-900/5 text-[16px]">🚀</span>
+              <div class="font-semibold text-[14px] md:text-[15px]">속도와 실행</div>
+            </div>
+            <p class="mt-2 text-[13px] text-gray-600">작은 아이디어도 곧바로 실행, 빠른 피드백 루프.</p>
+          </div>
+
+          <div class="rounded-2xl border p-5 bg-white h-[128px] md:h-[136px] lg:h-[140px] flex flex-col justify-center items-start text-left">
+            <div class="flex items-center gap-2">
+              <span class="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-gray-900/5 text-[16px]">🎯</span>
+              <div class="font-semibold text-[14px] md:text-[15px]">직접적 임팩트</div>
+            </div>
+            <p class="mt-2 text-[13px] text-gray-600">당신의 결과물이 매출과 바로 연결.</p>
+          </div>
+
+          <div class="rounded-2xl border p-5 bg-white h-[128px] md:h-[136px] lg:h-[140px] flex flex-col justify-center items-start text-left">
+            <div class="flex items-center gap-2">
+              <span class="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-gray-900/5 text-[16px]">🧗</span>
+              <div class="font-semibold text-[14px] md:text-[15px]">처절한 실행</div>
+            </div>
+            <p class="mt-2 text-[13px] text-gray-600">실패를 두려워하되 곧장 다시 시도.</p>
+          </div>
+
+          <div class="rounded-2xl border p-5 bg-white h-[128px] md:h-[136px] lg:h-[140px] flex flex-col justify-center items-start text-left">
+            <div class="flex items-center gap-2">
+              <span class="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-gray-900/5 text-[16px]">🧑‍🤝‍🧑</span>
+              <div class="font-semibold text-[14px] md:text-[15px]">함께 버틴다</div>
+            </div>
+            <p class="mt-2 text-[13px] text-gray-600">‘내 일이 아니다’ 대신 ‘어떻게든 해보자’.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FIELD NOTE -->
+      <div class="md:col-span-12">
+        <div class="mt-6 bg-black text-white rounded-2xl p-6 md:p-7 shadow-soft">
+          <div class="text-[11px] opacity-80">Field Note</div>
+          <div class="mt-1.5 font-semibold text-[18px] md:text-[20px]">완성된 회사가 아닙니다.</div>
+          <div class="mt-1.5 text-[13px] md:text-[14px] opacity-90 leading-relaxed">
+            실패하고, 다시 시도하고, 버티면서 답을 찾습니다. 스펙보다 태도.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section id="values" class="mx-auto max-w-[72rem] px-4 py-8">
+    <div class="rounded-2xl border bg-gray-50 p-6 md:p-7">
+      <div>
+        <h3 class="text-[18px] md:text-[20px] font-extrabold">우리가 원하는 동료</h3>
+        <p class="mt-1.5 text-[13px] text-gray-600">함께 끝까지 실행하는 동료를 찾습니다.</p>
+      </div>
+
+      <div class="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <div class="card p-4 text-[13px]">화려한 성공보다 처절한 실행을 선택</div>
+        <div class="card p-4 text-[13px]">끝까지 결과물을 만드는 책임감</div>
+        <div class="card p-4 text-[13px]">‘내 일이 아니다’ 대신 ‘어떻게든 해보자’</div>
+        <div class="card p-4 text-[13px]">실패를 두려워하되 곧장 다시 일어섬</div>
+        <div class="card p-4 text-[13px]">팀과 함께 성장의 보람을 느끼는 사람</div>
+        <div class="card p-4 text-[13px]">스펙보다 태도로 증명하는 사람</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROLES -->
+  <section id="roles" class="mx-auto max-w-[72rem] px-4 py-9">
+    <div class="flex items-end justify-between gap-4">
+      <h3 class="text-[18px] md:text-[20px] font-extrabold tracking-tight">모집 포지션</h3>
+      <a href="#apply" class="text-[13px] hover:opacity-80">지원 안내 →</a>
+    </div>
+
+    <div class="card mt-4 p-5 md:p-6">
+      <div class="text-[17px] md:text-[18px] font-semibold">커머스 디자이너 인턴</div>
+      <div class="mt-4 grid md:grid-cols-3 gap-6 text-[13px] text-gray-700">
+        <div>
+          <div class="font-semibold">주요 업무</div>
+          <ul class="mt-2 space-y-2 list-disc list-inside">
+            <li>제품 상세/이벤트 페이지 등 커머스 디자인 제작</li>
+            <li>웹/모바일 UI·UX 관련 비주얼 자산 제작</li>
+            <li>배너/광고 소재/프로모션 비주얼</li>
+            <li>마케팅·상품기획 협업, 고객 경험 개선</li>
+            <li>아이디어를 빠르게 시각화하고 반복 개선</li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-semibold">자격 요건</div>
+          <ul class="mt-2 space-y-2 list-disc list-inside">
+            <li>경력 무관 (가능성과 실행력 중시)</li>
+            <li>Photoshop/Illustrator/Figma 활용 가능</li>
+            <li>커머스 환경에 대한 관심</li>
+            <li>포트폴리오 제출 필수</li>
+          </ul>
+
+          <div class="mt-5 font-semibold">우대 사항</div>
+          <ul class="mt-2 space-y-2 list-disc list-inside">
+            <li>상세페이지 제작 경험</li>
+            <li>영상 편집/모션그래픽 역량</li>
+            <li>데이터 기반 디자인 개선 경험</li>
+            <li>빠른 피드백/반복 개선에 익숙한 분</li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-4">
+          <div class="rounded-xl border p-4 bg-gray-50">
+            <div class="text-[13px] font-semibold">근무 조건</div>
+            <ul class="mt-2 space-y-1 list-disc list-inside">
+              <li>실무형 인턴십<br>(계약 1개월 + 인턴 2개월 후 정규직 전환 검토)</li>
+              <li>주 5일 · 09:00~10:00 사이 자율 출근제 운영</li>
+              <li>주소: 서울 서초구 반포대로21길 49, 2층</li>
+              <li>급여: 회사 내규 (면접 후 결정)</li>
+            </ul>
+          </div>
+          <a
+            href="https://curators.career.greetinghr.com/ko/curators?utm_source=careers_site&utm_medium=landing_roles&utm_campaign=curators_survival"
+            target="_blank" rel="noreferrer"
+            class="inline-flex items-center justify-center rounded-2xl h-10 w-full bg-black text-white text-[14px]">
+            이 포지션 지원하기
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section id="benefits" class="mx-auto max-w-[72rem] px-4 py-9">
+    <div class="rounded-2xl border p-6 md:p-7 bg-white">
+      <div class="flex items-center gap-3">
+        <span class="font-semibold text-[18px] md:text-[20px]">복리후생</span>
+      </div>
+      <div class="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-[13px]">
+        <div class="card p-4">자유로운 근무 환경</div>
+        <div class="card p-4">리프레시 휴가</div>
+        <div class="card p-4">임직원 자사몰 할인</div>
+        <div class="card p-4">성과 기반 인센티브</div>
+        <div class="card p-4">장기근속 포상</div>
+        <div class="card p-4">교육 및 최고 수준의 장비 제공</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" class="mx-auto max-w-[72rem] px-4 py-9">
+    <h3 class="text-[18px] md:text-[20px] font-extrabold tracking-tight">전형 절차</h3>
+    <div class="mt-4 grid md:grid-cols-5 gap-3">
+      <div class="rounded-xl border p-4">
+        <div class="text-[11px] text-gray-500">STEP 1</div>
+        <div class="mt-1 font-semibold text-[14px]">서류 전형 (포트폴리오 포함)</div>
+      </div>
+      <div class="rounded-xl border p-4">
+        <div class="text-[11px] text-gray-500">STEP 2</div>
+        <div class="mt-1 font-semibold text-[14px]">대면 인터뷰</div>
+      </div>
+      <div class="rounded-xl border p-4">
+        <div class="text-[11px] text-gray-500">STEP 3</div>
+        <div class="mt-1 font-semibold text-[14px]">추가 인터뷰</div>
+        <div class="mt-1 text-[11px] text-gray-400">※ 필요 시 진행</div>
+      </div>
+      <div class="rounded-xl border p-4">
+        <div class="text-[11px] text-gray-500">STEP 4</div>
+        <div class="mt-1 font-semibold text-[14px]">처우 협의</div>
+      </div>
+      <div class="rounded-xl border p-4">
+        <div class="text-[11px] text-gray-500">STEP 5</div>
+        <div class="mt-1 font-semibold text-[14px]">오퍼레터 및 합격</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPLY -->
+  <section id="apply" class="mx-auto max-w-[72rem] px-4 py-10">
+    <div class="rounded-2xl bg-gray-900 text-white p-7 md:p-8">
+      <div class="text-[10px] uppercase tracking-widest opacity-80">MAKE YOUR MOVE</div>
+      <h3 class="mt-2 text-[18px] md:text-[20px] font-extrabold leading-snug">안정은 없습니다. 하지만 진짜 실전이 있습니다.</h3>
+      <p class="mt-2 text-gray-300 leading-relaxed text-[13px] md:text-[14px]">
+        지금 이 무대에서 당신의 실행이 곧 우리의 생존이자, 당신 커리어의 성장입니다. 끝까지 해내며 함께 살아남을 동료, 바로 당신입니다.
+      </p>
+      <div class="mt-4 flex flex-col sm:flex-row gap-3">
+        <a
+          href="https://curators.career.greetinghr.com/ko/curators?utm_source=careers_site&utm_medium=landing&utm_campaign=curators_survival"
+          target="_blank" rel="noreferrer"
+          class="inline-flex items-center justify-center rounded-2xl h-10 px-5 bg-white text-gray-900 hover:bg-white/90 text-[13px]">
+          그리팅에서 지원하기
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t">
+    <div class="mx-auto max-w-[72rem] px-4 py-7 text-[12px] md:text-[13px] text-gray-500 flex flex-col md:flex-row items-center gap-2 md:justify-between">
+      <div>© <span id="y"></span> Curators Inc. All rights reserved.</div>
+      <div class="flex items-center gap-4">
+        <span>서울 서초구 반포대로21길 49, 2층</span>
+        <span>채용 문의: bada_yp@eatssports.com.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

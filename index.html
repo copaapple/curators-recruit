@@ -62,12 +62,13 @@
   <section class="relative overflow-hidden">
     <div class="absolute inset-0 -z-10 bg-gradient-to-b from-gray-50 via-white to-white"></div>
 
-    <div class="mx-auto max-w-[72rem] px-4 pt-8 md:pt-10 pb-10 md:pb-12 grid md:grid-cols-12 gap-7 items-start">
+    <!-- ✅ 하단선 정렬: items-end 로 변경 -->
+    <div class="mx-auto max-w-[72rem] px-4 pt-8 md:pt-10 pb-10 md:pb-12 grid md:grid-cols-12 gap-7 items-end">
       <!-- LEFT -->
       <div class="md:col-span-8 flex flex-col items-start">
-        <!-- 배지 -->
-        <div class="inline-flex items-center gap-1.5 rounded-full border px-2 py-[1px] text-[12px] font-medium">
-          <span class="inline-flex h-[6px] w-[6px] rounded-full pulse-light"></span>
+        <!-- ✅ 배지 살짝 크게: 텍스트/패딩/도트 업 -->
+        <div class="inline-flex items-center gap-2 rounded-full border px-3 py-1 text-[13px] font-medium">
+          <span class="inline-flex h-[8px] w-[8px] rounded-full pulse-light"></span>
           지금은 생존 모드입니다
         </div>
 
@@ -84,30 +85,24 @@
           헬스&뷰티 브랜드를 직접 기획·운영하는 미디어커머스 팀, 큐레이터스.
         </p>
 
-        <!-- ✅ 여기부터 교체된 블록: 숫자 3개 + 소개 + 4카드 (같은 3열 그리드로 정렬 고정) -->
+        <!-- 숫자 3개 + 소개 + 4카드 (그대로) -->
         <div class="mt-5 grid grid-cols-1 sm:grid-cols-3 gap-4 items-start">
-          <!-- 지표 1 -->
           <div class="rounded-2xl border bg-white shadow-soft p-6 flex flex-col justify-center items-center text-center">
             <div class="text-[14px] text-gray-500 font-medium">2024 매출</div>
             <div class="mt-1.5 text-[24px] font-extrabold tracking-tight leading-none">100억+</div>
             <div class="mt-1 text-[14px] text-gray-600">출발점</div>
           </div>
-
-          <!-- 지표 2 -->
           <div class="rounded-2xl border bg-white shadow-soft p-6 flex flex-col justify-center items-center text-center">
             <div class="text-[14px] text-gray-500 font-medium">2024 연 성장률</div>
             <div class="mt-1.5 text-[24px] font-extrabold tracking-tight leading-none">80%+</div>
             <div class="mt-1 text-[14px] text-gray-600">더 빨라져야 함</div>
           </div>
-
-          <!-- 지표 3 -->
           <div class="rounded-2xl border bg-white shadow-soft p-6 flex flex-col justify-center items-center text-center">
             <div class="text-[14px] text-gray-500 font-medium">누적 판매</div>
             <div class="mt-1.5 text-[24px] font-extrabold tracking-tight leading-none">140만+</div>
             <div class="mt-1 text-[14px] text-gray-600">여기서 멈출 수 없다</div>
           </div>
 
-          <!-- '여기는 진행형의 현장입니다' 박스: 가로 전체(col-span-3), 크기 그대로 -->
           <div class="sm:col-span-3 rounded-2xl border bg-gray-50 shadow-soft p-6 mt-1">
             <h2 class="text-[18px] md:text-[20px] font-extrabold tracking-tight">여기는 진행형의 현장입니다</h2>
             <p class="mt-2.5 text-[15px] text-gray-600 leading-relaxed">
@@ -116,7 +111,6 @@
             </p>
           </div>
 
-          <!-- 핵심 4카드: 소개 박스 아래, 가로 전체(col-span-3) -->
           <div class="sm:col-span-3 mt-3">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div class="rounded-2xl border p-5 bg-white min-h-[120px] flex flex-col justify-center">
@@ -153,10 +147,10 @@
             </div>
           </div>
         </div>
-        <!-- ✅ 교체 블록 끝 -->
+        <!-- /왼쪽 -->
       </div>
 
-      <!-- RIGHT: 브랜드 카드 3개 (원본 유지) -->
+      <!-- RIGHT: 브랜드 카드 3개 (그대로) -->
       <div class="md:col-span-4 flex flex-col">
         <!-- 이츠스포츠 -->
         <div class="block">
@@ -300,7 +294,7 @@
     </div>
   </section>
 
-  <!-- APPLY (요청하신 블록 그대로) -->
+  <!-- APPLY -->
   <section id="apply" class="mx-auto max-w-[72rem] px-4 py-10">
     <div class="rounded-2xl bg-gray-900 text-white p-7 md:p-8">
       <div class="text-[10px] uppercase tracking-widest opacity-80">MAKE YOUR MOVE</div>
@@ -326,7 +320,7 @@
     </div>
   </section>
 
-  <!-- FOOTER (요청하신 블록 그대로) -->
+  <!-- FOOTER -->
   <footer class="border-t">
     <div class="mx-auto max-w-[72rem] px-4 py-7 text-[12px] md:text-[13px] text-gray-500 flex flex-col md:flex-row items-center gap-2 md:justify-between">
       <div>© <span id="y"></span> Curators Inc. All rights reserved.</div>
